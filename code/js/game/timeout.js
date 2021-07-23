@@ -1,7 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
   const timeout = Object.values(JSON.parse(window.localStorage.getItem('data')))[1];
   let timeInGame = window.cardsGameSecs;
-  setInterval(() => {timeInGame = window.cardsGameSecs}, 1000);
+  setInterval(() => {
+    timeInGame = window.cardsGameSecs;
+    document.getElementById('time').textContent = 'Remains: ' + (Number(timeout) - Number(timeInGame));
+  }, 1000);
   let timeControlInterval = setInterval(() => {
     if (timeInGame >= timeout) {
       clearInterval(timeControlInterval);
