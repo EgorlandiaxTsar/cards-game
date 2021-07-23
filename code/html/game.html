@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cards Game</title>
+  <link rel="stylesheet" href="../styles/normalize/normalize-css.css">
+  <link rel="stylesheet" href="../styles/game-styles.css">
+  <script defer src="../js/game/modalVictory.js"></script>
+  <script defer src="../js/game/timeout.js"></script>
+  <script defer src="../js/game/gameNameInitializer.js"></script>
+  <script defer src="../js/game/structureCreator.js"></script>
+</head>
+<body>
+<div class="container" id="root">
+  <h1 class="container__page-title" id="page-title">
+    'Game Name'
+  </h1>
+  <section class="container__game-matrix">
+    <div class="game-matrix__matrix" id="matrix-container">
+
+    </div>
+  </section>
+  <section class="container__button-group">
+    <div class="button-group__content">
+      <div class="control-btn content__exit-button">
+        <a href="form.html" class="exit-button__exit-link">Back to main</a>
+      </div>
+      <div class="control-btn content__new-game" id="new-game-button" onclick="window.location.reload();">
+        New game
+      </div>
+      <div class="control-btn content__stop-game" id="stop-game-button">
+        Stop game
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

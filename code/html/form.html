@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cards Game Configuration Form</title>
+  <link rel="stylesheet" href="../styles/normalize/normalize-css.css">
+  <link rel="stylesheet" href="../styles/form-styles.css">
+  <script defer src="../js/form/randomConfig.js"></script>
+  <script defer src="../js/form/dataCollector.js"></script>
+  <script defer src="../js/form/dataChecker.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1 class="container__page-title">
+    Game Configuration Form
+  </h1>
+  <section class="container__form">
+    <div class="form__content">
+      <ul class="content_content-list">
+        <li>
+          <label>
+            <input class="content-list__game-name" id="game-name-input" type="text" placeholder="Name of your new game...">
+          </label>
+        </li>
+        <li>
+          <label>
+            <input class="content-list__game-timeout" id="game-timeout-input" type="text" placeholder="Enter timeout...">
+          </label>
+          <label>
+            <select class="content-list__timeout-select" id="timeout-select">
+              <option class="timeout-select__option" selected>
+                Seconds
+              </option>
+              <option class="timeout-select__option">
+                Minutes
+              </option>
+              <option class="timeout-select__option" id="no-timeout-option">
+                None
+              </option>
+            </select>
+          </label>
+        </li>
+        <li>
+          <label>
+            <select class="content-list__matrix-select" id="matrix-select">
+              <option class="matrix-select__option" data-option-name="beginner">
+                Matrix 4x4 (Beginner)
+              </option>
+              <option class="matrix-select__option" data-option-name="base">
+                Matrix 8x8 (Base)
+              </option>
+              <option class="matrix-select__option" data-option-name="intermediate" selected>
+                Matrix 16x16 (Intermediate)
+              </option>
+              <option class="matrix-select__option" data-option-name="master">
+                Matrix 32x32 (Master)
+              </option>
+              <option class="matrix-select__option" data-option-name="maestro">
+                Matrix 64x64 (Maestro)
+              </option>
+            </select>
+          </label>
+        </li>
+      </ul>
+    </div>
+    <div class="form_button-group">
+      <input class="button-group__submit-button" id="submit-button" type="button" value="Submit">
+      <input class="button-group__random-button" id="random-button" type="button" value="Random">
+      <div class="button-group__play-button">
+        <a class="play-button__button-link" href="#" id="play-link">
+          PLAY!
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

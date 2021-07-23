@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'Varela';
+  src: url('../../res/fonts/Varela.woff2') format('woff2'),
+  url('../../res/fonts/Varela.woff') format('woff');
+}
+
+/*Global Styles*/
+* {
+  box-sizing: border-box;
+  font-family: 'Varela', sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #666;
+}
+
+.container {
+  width: 1440px;
+  min-height: 720px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #666;
+}
+
+.container__page-title {
+  width: 1440px;
+  padding-top: 25px;
+  color: #00ffa5;
+  font-size: 48px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.container__game-matrix {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #555;
+  width: 1400px;
+  min-height: 560px;
+  border: 4px solid #00ffa5;
+  border-radius: 10px;
+}
+
+.game-matrix__matrix {
+  width: 1330px;
+  margin: 35px auto 20px;
+  padding: 0;
+}
+
+.matrix__cards-row {
+  display: flex;
+}
+
+.card-row__card {
+  width: 1330px;
+  margin: 0 auto 35px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.card-row__card:hover {
+  background-color: #222 !important;
+}
+
+.button-group__content {
+  width: 1400px;
+  height: 150px;
+  margin: 25px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #444;
+  border-radius: 10px;
+  background-color: #444;
+  color: #fff;
+}
+
+.control-btn {
+  width: 300px;
+  height: 100px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 22px;
+  font-weight: 600;
+  background-color: #333;
+  transition-property: background-color, color;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+.exit-button__exit-link {
+  padding: 35px 77px;
+}
+
+.control-btn:hover {
+  background-color: #f1f1f1;
+  color: #333;
+  border: 3px solid #00ffa5;
+}
+
+.content__exit-button {
+  margin-left: 40px;
+}
+
+.content__stop-game {
+  margin-right: 40px;
+}
+
+.modal-control-btn {
+  transition-property: background-color, color;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.modal-control-btn:hover {
+  background-color: #fff !important;
+  color: #222;
+}
